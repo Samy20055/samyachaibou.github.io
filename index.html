@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Samy Achaibou</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -34,79 +35,164 @@
     }
     .lang {
       font-size: 0.9em;
+      margin-bottom: 20px;
     }
   </style>
 </head>
 
 <body>
 
+  <!-- Sélecteur de langue -->
   <p class="lang">
-🇫🇷 <strong>Français</strong> | <a href="#">English</a>
-</p>
+    🇫🇷 <a href="#" onclick="setLang('fr')">Français</a> |
+    🇬🇧 <a href="#" onclick="setLang('en')">English</a>
+  </p>
 
-  <h1>Samy Achaibou</h1>
-<p>
-Étudiant en 3ème année de licence double diplome <strong>Sciences de la vie – Informatique</strong><br>
-Université Paris-Saclay
-</p>
+  <!-- ================= FRANÇAIS ================= -->
+  <div id="content-fr">
 
-<h2>Projets</h2>
+    <h1>Samy Achaibou</h1>
+    <p>
+      Étudiant en 3ème année de licence double diplôme
+      <strong>Sciences de la vie – Informatique</strong><br>
+      Université Paris-Saclay
+    </p>
 
-<h3> Tweet Classification Project (NLP)</h3>
-<ul>
-  <li><strong>Context:</strong> Academic project</li>
-  <li><strong>Objective:</strong> Analyze and classify tweets using natural language processing techniques</li>
-  <li><strong>Technologies:</strong> Python, NLP, Gradio</li>
-</ul>
+    <h2>Projets</h2>
 
-<h3> SQL Database Project</h3>
-<ul>
-  <li><strong>Context:</strong> Academic project</li>
-  <li><strong>Objective:</strong> Design a relational database and perform SQL queries</li>
-  <li><strong>Technologies:</strong> SQL, PL/SQL</li>
-</ul>
+    <h3>Projet de classification de tweets (NLP)</h3>
+    <ul>
+      <li><strong>Contexte :</strong> Projet académique</li>
+      <li><strong>Objectif :</strong> Analyser et classifier des tweets à l’aide du traitement du langage naturel</li>
+      <li><strong>Technologies :</strong> Python, NLP, Gradio</li>
+    </ul>
 
-<h3> Regular Expression Automaton Project</h3>
-<ul>
-  <li><strong>Context:</strong> Computer science course project</li>
-  <li><strong>Objective:</strong> Design and implement an automaton for regular expression recognition</li>
-  <li><strong>Technologies:</strong> LEX/FLEX, Bison/Yak, Python</li>
-</ul>
+    <h3>Projet de base de données, SQL</h3>
+    <ul>
+      <li><strong>Contexte :</strong> Projet académique</li>
+      <li><strong>Objectif :</strong> Concevoir une base de données relationnelle et effectuer des requêtes SQL</li>
+      <li><strong>Technologies :</strong> SQL, PL/SQL</li>
+    </ul>
 
-<h3> Bibliographic Research on Protein Hydrophobicity Profile</h3>
-<ul>
-  <li><strong>Context:</strong> Biology / bioinformatics project</li>
-  <li><strong>Objective:</strong> Study and analyze protein hydrophobicity profiles through scientific literature</li>
-  <li><strong>Technologies:</strong> Scientific literature analysis</li>
-</ul>
+    <h3>Projet automates et expressions régulières</h3>
+    <ul>
+      <li><strong>Contexte :</strong> Projet en informatique</li>
+      <li><strong>Objectif :</strong> Concevoir et implémenter un automate de reconnaissance d’expressions régulières</li>
+      <li><strong>Technologies :</strong> LEX/FLEX, Bison/Yacc, Python</li>
+    </ul>
 
-<h3>Scientific Poster in Biology</h3>
-<ul>
-  <li><strong>Context:</strong> Academic project</li>
-  <li><strong>Objective:</strong> Design and present a scientific poster in biology</li>
-  <li>
-    <strong>Poster:</strong>
-    <a href="pdf/ACHAIBOU_Samy_poster_spectrométrie.pdf" target="_blank">
-      View the poster (PDF)
-    </a>
-  </li>
-</ul>
+    <h3>Recherche bibliographique sur le profil d’hydrophobicité des protéines</h3>
+    <ul>
+      <li><strong>Contexte :</strong> Projet de biologie / bio-informatique</li>
+      <li><strong>Objectif :</strong> Étudier et analyser les profils d’hydrophobicité des protéines à partir de la littérature scientifique</li>
+      <li><strong>Technologies :</strong> Analyse d’articles scientifiques</li>
+    </ul>
 
+    <h3>Poster scientifique en biologie</h3>
+    <ul>
+      <li><strong>Contexte :</strong> Projet académique</li>
+      <li><strong>Objectif :</strong> Concevoir et présenter un poster scientifique en biologie</li>
+      <li>
+        <strong>Poster :</strong>
+        <a href="pdf/ACHAIBOU_Samy_poster_spectrométrie.pdf" target="_blank">
+          Voir le poster (PDF)
+        </a>
+      </li>
+    </ul>
 
-<h3> Python Mini Project</h3>
-<ul>
-  <li><strong>Context:</strong> Programming course project</li>
-  <li><strong>Objective:</strong> Develop a small application to practice Python programming</li>
-  <li><strong>Technologies:</strong> Python</li>
-</ul>
+    <h3>Mini-projet Python</h3>
+    <ul>
+      <li><strong>Contexte :</strong> Projet de programmation</li>
+      <li><strong>Objectif :</strong> Développer une petite application pour pratiquer Python</li>
+      <li><strong>Technologies :</strong> Python</li>
+    </ul>
 
-<h3> Hangman Game Project</h3>
-<ul>
-  <li><strong>Context:</strong> Introductory programming project</li>
-  <li><strong>Objective:</strong> Implement the Hangman game logic</li>
-  <li><strong>Technologies:</strong> Python</li>
-</ul>
+    <h3>Projet jeu du pendu</h3>
+    <ul>
+      <li><strong>Contexte :</strong> Projet d’initiation à la programmation</li>
+      <li><strong>Objectif :</strong> Implémenter la logique du jeu du pendu</li>
+      <li><strong>Technologies :</strong> Python</li>
+    </ul>
+
+  </div>
+
+  <!-- ================= ENGLISH ================= -->
+  <div id="content-en" style="display:none;">
+
+    <h1>Samy Achaibou</h1>
+    <p>
+      3rd-year student in a dual Bachelor’s degree
+      <strong>Life Sciences – Computer Science</strong><br>
+      Paris-Saclay University
+    </p>
+
+    <h2>Projects</h2>
+
+    <h3>Tweet Classification Project (NLP)</h3>
+    <ul>
+      <li><strong>Context:</strong> Academic project</li>
+      <li><strong>Objective:</strong> Analyze and classify tweets using natural language processing techniques</li>
+      <li><strong>Technologies:</strong> Python, NLP, Gradio</li>
+    </ul>
+
+    <h3>SQL Database Project</h3>
+    <ul>
+      <li><strong>Context:</strong> Academic project</li>
+      <li><strong>Objective:</strong> Design a relational database and perform SQL queries</li>
+      <li><strong>Technologies:</strong> SQL, PL/SQL</li>
+    </ul>
+
+    <h3>Regular Expression Automaton Project</h3>
+    <ul>
+      <li><strong>Context:</strong> Computer science course project</li>
+      <li><strong>Objective:</strong> Design and implement an automaton for regular expression recognition</li>
+      <li><strong>Technologies:</strong> LEX/FLEX, Bison/Yacc, Python</li>
+    </ul>
+
+    <h3>Bibliographic Research on Protein Hydrophobicity Profiles</h3>
+    <ul>
+      <li><strong>Context:</strong> Biology / bioinformatics project</li>
+      <li><strong>Objective:</strong> Study and analyze protein hydrophobicity profiles through scientific literature</li>
+      <li><strong>Technologies:</strong> Scientific literature analysis</li>
+    </ul>
+
+    <h3>Scientific Poster in Biology</h3>
+    <ul>
+      <li><strong>Context:</strong> Academic project</li>
+      <li><strong>Objective:</strong> Design and present a scientific poster in biology</li>
+      <li>
+        <strong>Poster:</strong>
+        <a href="pdf/ACHAIBOU_Samy_poster_spectrométrie.pdf" target="_blank">
+          View the poster (PDF)
+        </a>
+      </li>
+    </ul>
+
+    <h3>Python Mini Project</h3>
+    <ul>
+      <li><strong>Context:</strong> Programming course project</li>
+      <li><strong>Objective:</strong> Develop a small application to practice Python programming</li>
+      <li><strong>Technologies:</strong> Python</li>
+    </ul>
+
+    <h3>Hangman Game Project</h3>
+    <ul>
+      <li><strong>Context:</strong> Introductory programming project</li>
+      <li><strong>Objective:</strong> Implement the Hangman game logic</li>
+      <li><strong>Technologies:</strong> Python</li>
+    </ul>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function setLang(lang) {
+      document.getElementById("content-fr").style.display =
+        lang === "fr" ? "block" : "none";
+      document.getElementById("content-en").style.display =
+        lang === "en" ? "block" : "none";
+    }
+  </script>
 
 </body>
 </html>
-
